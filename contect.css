@@ -1,0 +1,88 @@
+body{
+      background-color: rgb(136, 216, 205);
+     
+
+}
+   
+    .form-container {
+      background: rgb(207, 137, 137);
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(255, 0, 0, 0.1);
+      width: 40%;
+      max-width: 250px;
+      margin-bottom: 10px;
+    
+      
+    }
+
+    .form-container h2 {
+      
+      margin-bottom: 20px;
+      color: #009688;
+    }
+
+    label {
+      display: flex;
+      cursor: default;
+      margin-bottom: 6px;
+      text-decoration: solid;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-left: 300px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="message"],
+    
+
+    textarea {
+      width: 50%;
+      padding: 10px;
+      margin-bottom: 15px;
+      margin-left: 300px;
+      border: 1px solid #000000;
+      border-radius: 4pc;
+      font-size: 14px;
+      transition: border 0.5s;
+     text-align-last: justify;
+      background-color: #fefbfb;
+    }
+  
+
+    input:focus,
+    textarea:focus {
+      border-color: #0310ff;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background: #0a11e8;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 50%;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+     margin-left: 300px;
+    }
+    #sport{
+
+      margin-left: 300px;
+      cursor: default;
+      margin-bottom: 6px;
+      text-decoration: solid;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+.gender{
+  text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 10px;
+}

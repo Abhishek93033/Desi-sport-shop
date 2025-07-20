@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Shop</title>
+</head>
+<body >
+
+  <header>
+    <div class="logo">🏏 Desi Sports Shop</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="product.html">Products</a>
+      <a href="About.html">About</a>
+      <a href="contect.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Desi Sports World!</h1>
+    <p>Find your favorite desi sports gear – from Kabbadi kits to Cricket bats!</p>
+  </section>
+
+  <section class="products">
+    <h2>Our Products</h2>
+   <label>
+    <input type="button" checked="1">
+   </label>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Desi Sports Shop. All rights reserved.</p>
+  </footer>
+
+<script >
+  window.addEventListener('DOMContentLoaded', () => {
+  console.log("Welcome to Desi Sports Shop! 🏏");
+});
+
+// Optional: Highlight the current navigation tab
+const links = document.querySelectorAll("nav a");
+links.forEach(link => {
+  if (link.href === window.location.href) {
+    link.style.borderBottom = "2px solid yellow";
+  }
+});
+</script>
+    
+</body>
+</html>   

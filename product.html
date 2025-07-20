@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+              <img src="new logo . png" alt="Company Logo">; 
+            </div>
+            <nav>
+                <div class="search-container">
+                  <i class="fas fa-search fasfa-search"></i>
+                  <input type="search" class="search-bar" placeholder="Search products...">
+                  <i class="fas fa-microphone fasfa-mic"></i>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="Description">
+            <h1>WELCOME TO DESI SPORT SHOP </h1>
+            <h4>APKI APNI PASAND </h4>
+            <H5>Find your favorite desi sports gear – from Kabbadi kits to Cricket bats!</H5>
+        </div>
+    </main>
+    <article>
+        <section class="product-list">
+            <div class="product-item expandable">
+                <img src="kabbadi.jpg" alt="Kabbadi Kit">
+                <h2>Kabbadi Kit</h2>
+                <p>Price: $50</p>
+                <button>Add to Cart</button>
+                <div class="product-details" style="display:none;">
+                    <p>Traditional Kabbadi kit for professionals and beginners.</p>
+                </div>
+            </div>
+            <div class="product-item expandable">
+                <img src="cricket-bat.jpg" alt="Cricket Bat">
+                <h2>Cricket Bat</h2>
+                <p>Price: $75</p>
+                <button>Add to Cart</button>
+                <div class="product-details" style="display:none;">
+                    <p>Premium quality cricket bat for all levels.</p>
+                </div>
+            </div>
+            <div class="product-item expandable">
+                <img src="football.jpg" alt="Football">
+                <h2>Football</h2>
+                <p>Price: $30</p>
+                <button>Add to Cart</button>
+                <div class="product-details" style="display:none;">
+                    <p>Durable football for matches and practice.</p>
+                </div>
+            </div>
+            <div class="product-item expandable">
+                <img src="badminton-racket.jpg" alt="Badminton Racket">
+                <h2>Badminton Racket</h2>
+                <p>Price: $40</p>
+                <button>Add to Cart</button>
+                <div class="product-details" style="display:none;">
+                    <p>Lightweight racket for fast play.</p>
+                </div>
+            </div>
+            <div class="product-item expandable">
+                <img src="hockey-stick.jpg" alt="Hockey Stick">
+                <h2>Hockey Stick</h2>
+                <p>Price: $60</p>
+                <button>Add to Cart</button>
+                <div class="product-details" style="display:none;">
+                    <p>Strong and flexible hockey stick for all ages.</p>
+                </div>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Desi Sport Shop. All rights reserved.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>    </footer>
+    <script>
+    // Toggle product details on click
+    const items = document.querySelectorAll('.product-item.expandable');
+    items.forEach(item => {
+      item.addEventListener('click', function(e) {
+        // Prevent button click from toggling details
+        if(e.target.tagName.toLowerCase() === 'button') return;
+        const details = this.querySelector('.product-details');
+        if(details) {
+          details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+      });
+    });
+    </script>
+</body>
+</html>

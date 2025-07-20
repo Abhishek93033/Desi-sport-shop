@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contect.css">
+</head>
+<body>
+ <section class="form">
+  <div style="background-color: #009688; height: 70px; text-align: center;
+              font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              padding-top: 20px; font-size: 2em; color: white;">
+    CONTACT FORM
+  </div><br><br>
+
+  <form action="submit.html" method="post">
+    <label for="name">First Name:</label><br>
+    <input type="text" id="name" name="firstname" placeholder="Full name" required><br><br>
+
+    <label for="lastname">Last Name:</label><br>
+    <input type="text" id="lastname" name="lastname" placeholder="Last name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+    <label for="phone">Phone:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="1234567890" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30" placeholder="Write something..." required></textarea><br><br>
+
+  
+    <h3>Gender</h3>
+    <input type="radio" name="gender" value="Male" required> Male<br>
+    <input type="radio" name="gender" value="Female"> Female<br><br>
+    <h3>Choose your Favourite Sport:</h3>
+    <input type="radio" name="sport" value="Kabbadi" checked> Kabbadi<br>
+    <input type="radio" name="sport" value="Kho Kho"> Kho Kho<br>
+    <input type="radio" name="sport" value="Gilli Danda"> Gilli Danda<br>
+    <input type="radio" name="sport" value="Cricket"> Cricket<br>
+    <input type="radio" name="sport" value="Football"> Football<br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</section>
+<script src="form.js"></script>
+</body>
+</html>
